@@ -1,25 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Cookies Shop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <title>Salmon Cookies Shop</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header>
-        <h1>
-            Salamon Cookies
-        </h1>
-        <ul>
-            <li><a href="index.html">Main Page</a></li>
-        </ul>
+        <section class="imgs">
+            <img class="socialMedia" src="pic/fb-icon.png" alt="">
+            <img class="socialMedia" src="pic/twit-icon.png" alt="">
+            <img class="socialMedia" src="pic/gp-icon.png" alt="">
+            <img class="socialMedia" src="pic/insta-icon.png" alt="">
+            <img class="socialMedia" src="pic/flic-icon.png" alt="">
+            <img class="socialMedia" src="pic/pint-icon.png" alt="">
+            <img class="socialMedia" src="pic/rss-icon.png" alt="">
+            <img class="socialMedia" src="pic/mail-icon.png" alt="">
+        </section>
+        <h1>Salmon Cookies Shop</h1>
+
     </header>
     <main>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="sales.html">sales</a></li>
+                <li><a href="ourShop.html">Our Shops</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+            </ul>
+        </nav>
+        
+    
         <h2>
             Pat’s Salmon Cookies Shop
         </h2>
-    </main>
-    <div id='TheParent'></div>
+        <div id='TheParent'></div>
+        <div style="overflow-x:auto;">
 
-    <script src="js/app.js"></script>
+        <br>
+        <br>
+
+
+        <!-- location, minCustomers, maxCustomers, avgCookies -->
+
+        <form id="form">
+            <fieldset class="most">
+
+                <label for="locationNameField">Location  :</label>
+                <input type="text" name="locationNameField" id="locationNameField">
+
+                <br>
+                <br>
+                <label for="minCustomersField">Min Customers  :</label>
+                <input type="number" name="minCustomersField" id="minCustomersField">
+
+                <br>
+                <br>
+
+                 <label for="maxCustomersField">Max Customers  :</label>
+                <input type="number" name="maxCustomersField" id="maxCustomersField">
+
+                <br> 
+                <br>
+
+                <label for="avgCookiesField">Avg Cookies  :</label>
+                <input type="float" name="avgCookiesField" id="avgCookiesField">
+
+
+                <br>
+                <br>
+
+                <input type="submit" value="Add shop">
+
+                <input type="reset" value="Reset">
+
+            </fieldset>
+        </form>
+        
+
+    </main>
+    <footer>
+        <script src="js/app.js"></script>
+
+    </footer>
 </body>
+
 </html>

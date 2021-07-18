@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -111,6 +113,10 @@ function makeFooter() {
     let footerRow = document.createElement("tr");
     table.appendChild(footerRow);
 
+
+
+
+
     let firstTh = document.createElement("th");
     footerRow.appendChild(firstTh)
 
@@ -135,12 +141,12 @@ function makeFooter() {
 
 }
 
-
-
 makeHeader();
 
-
 for (let i = 0; i < shops.length; i++) {
+    // shops[i].customersEachHour=[];
+    // shops[i].cookiesEachHour=[];
+
 
     shops[i].calcCustomersEachHour();
     shops[i].calcCookiesEachHour();
@@ -148,4 +154,61 @@ for (let i = 0; i < shops.length; i++) {
 
 }
 
+
 makeFooter();
+
+
+
+
+
+
+// getting  the tag from HTML 
+
+let form = document.getElementById('form');
+
+//adding event listener
+form.addEventListener('submit', submitter);
+
+//create function to run
+
+function submitter(event) { 
+    event.preventDefault();
+
+    let location = event.target.locationNameField.value;
+    let minCustomers = parseInt(event.target.minCustomersField.value);
+    let maxCustomers = parseInt(event.target.maxCustomersField.value);
+    let avgCookies = parseFloat(event.target.avgCookiesField.value);
+
+  
+    let addedShop = new Shop(location, minCustomers, maxCustomers, avgCookies);
+   
+
+
+
+   
+
+
+    table.textContent = '';
+
+
+
+    makeHeader();
+
+
+    
+    for (let i = 0; i < shops.length; i++) {
+     
+    
+    
+        shops[i].calcCustomersEachHour();
+        shops[i].calcCookiesEachHour();
+        shops[i].render();
+        console.log("111")
+    
+    }
+    
+    
+    makeFooter();
+}
+
+

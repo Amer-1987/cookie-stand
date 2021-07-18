@@ -1,10 +1,31 @@
   
-* {
-    font-family: Arial, sans-serif;
+body {
+  background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/spitzer-16.gif");
+  background-repeat: no-repeat, repeat;
+  background-size: cover; 
+  /* background-position: center;  */
+  font-family: 'Libre Baskerville', serif;  
+  font-size: 20px;  
+  color: rgb(230, 39, 14);
+}  
+  
+
+  table {
+    border-collapse:collapse ;
+    width: 100%;
+  }
+  th{
+    text-align: center;
+    background-color: rgb(68, 218, 238);
+    padding: 10px;
+    font-weight: bolder;
   }
   
+  td {
+    text-align: center;
+    padding: 10px;
+  }
   
-  table,tr,th,td{
-    border: 1px solid black;
-    border-collapse: collapse;
+  tr:nth-child(even) {
+    background-color: #e9e1e1;
   }
