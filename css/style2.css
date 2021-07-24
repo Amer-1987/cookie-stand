@@ -11,7 +11,7 @@ body{
     padding: 30px 0px 30px 0px ; 
     background-color: whitesmoke;
 
-    font-family: 'Libre Baskerville', serif;  
+    font-family: Arial, Verdana, sans-serif;
     font-size: 20px;  
 }
 
@@ -105,10 +105,12 @@ nav ul li a{
 .firstPar{
 
 text-align: justify;
- 
+font-family: Arial, Verdana, sans-serif;
+
 } 
 
 .bar1{
+    font-family: Arial, Verdana, sans-serif;
 
     width: 100%;
     margin-top:35px ;
@@ -141,7 +143,8 @@ text-align: justify;
 
 .SecondPar{
      width: 100%;
-        
+     font-family: Arial, Verdana, sans-serif;
+
 }
 
 
@@ -168,6 +171,7 @@ h2{
     float: none;
     color: rgb(23, 0, 128);
     font-size: xx-large;
+    font-family: "Sofia", sans-serif;
 
 }
 
@@ -224,6 +228,8 @@ ul{
     width: 40%;
     float:right ;
     margin-top: 100px;
+    font-family: Arial, Verdana, sans-serif;
+
 
     }
 
@@ -235,12 +241,13 @@ width: 100%;
 margin-top: 40px;
 
 }
+
     
 
 .aboutUs{
     text-align: center;
     font-family: "Sofia", sans-serif;
-color: crimson;
+    color: rgb(23, 0, 128);
 font-size: xx-large;
 font-weight:bolder ; 
 }
@@ -255,7 +262,7 @@ width: 60%;
 h3{
     text-align: center;
     font-family: "Sofia", sans-serif;
-color: crimson;
+    color: rgb(23, 0, 128);
 font-size: xx-large;
 font-weight:bolder ; 
 }

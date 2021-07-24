@@ -19,6 +19,7 @@ body {
     background-color: rgb(68, 218, 238);
     padding: 10px;
     font-weight: bolder;
+    color: black;
   }
   
   td {
@@ -27,5 +28,8 @@ body {
   }
   
   tr:nth-child(even) {
+    background-color: #e9e1e1;
+  }
+  tr:nth-child(odd) {
     background-color: #e9e1e1;
   }
