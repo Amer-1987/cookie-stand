@@ -4,13 +4,14 @@ body {
   background-repeat: no-repeat, repeat;
   background-size: cover; 
   /* background-position: center;  */
-  font-family: 'Libre Baskerville', serif;  
   font-size: 20px;  
   color: rgb(230, 39, 14);
 }  
   
 
   table {
+    font-family: Arial, Verdana, sans-serif;
+
     border-collapse:collapse ;
     width: 100%;
   }
